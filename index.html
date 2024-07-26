@@ -19,71 +19,86 @@ title: "Ed."
 
 <hr>
 
-  <div class="toc">
-    <h2>Transcriptions</h2>
-    <table id="tocTable">
-      <thead>
-        <tr>
-          <th>Document Type</th>
-          <th>Shelfmark</th>
-          <th>Letter's Date</th>
-          <th>Newsletter's Hubs</th>
-          <th>Sender</th>
-          <th>Recipient</th>
-          <th>Link</th>
-        </tr>
-        <tr>
-          <th><input type="text" id="filterType" onkeyup="filterTable()" placeholder="Search for Document Type" class="filter-input"></th>
-          <th><input type="text" id="filterShelfmark" onkeyup="filterTable()" placeholder="Search for Shelfmark" class="filter-input"></th>
-          <th><input type="text" id="filterDate" onkeyup="filterTable()" placeholder="Search for Letter's Date" class="filter-input"></th>
-          <th><input type="text" id="filterHubs" onkeyup="filterTable()" placeholder="Search for Newsetter's Hub and Date" class="filter-input"></th>
-          <th><input type="text" id="filterSender" onkeyup="filterTable()" placeholder="Search for Sender" class="filter-input"></th>
-          <th><input type="text" id="filterRecipient" onkeyup="filterTable()" placeholder="Search for Recipient" class="filter-input"></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for post in site.texts %}
-        <tr>
-          <td>{{ page.layout }}</td>
-          <td>{{ page.shelfmark }}</td>
-          <td>{{ page.date }}</td>
-          <td>{{ page.hubs }}</td>
-          <td>{{ page.sender }}</td>
-          <td>{{ page.recipient }}</td>
-          <td><a href="{{ page.url }}">{{ page.title }}</a></td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-  <script>
-    function filterTable() {
-      var input, filter, table, tr, td, i, j, txtValue;
-      table = document.getElementById("tocTable");
-      tr = table.getElementsByTagName("tr");
-      
-      var filters = [
-        document.getElementById("filterType").value.toUpperCase(),
-        document.getElementById("filterShelfmark").value.toUpperCase(),
-        document.getElementById("filterDate").value.toUpperCase(),
-        document.getElementById("filterHubs").value.toUpperCase(),
-        document.getElementById("filterSender").value.toUpperCase(),
-        document.getElementById("filterRecipient").value.toUpperCase()
-      ];
-      
-      for (i = 2; i < tr.length; i++) {
-        tr[i].style.display = "";
-        for (j = 0; j < filters.length; j++) {
-          td = tr[i].getElementsByTagName("td")[j];
-          if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filters[j]) === -1) {
-              tr[i].style.display = "none";
-              break;
-            }
+
+<div class="toc">
+  <h2>sample texts</h2>
+  <ul class="texts">
+  {% for item in site.texts %}
+
+    <li class="text-title">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+
+<div class="toc">
+  <h2>Transcriptions</h2>
+  <table id="tocTable">
+    <thead>
+      <tr>
+        <th>Document Type</th>
+        <th>Shelfmark</th>
+        <th>Letter's Date</th>
+        <th>Newsletter's Hubs</th>
+        <th>Sender</th>
+        <th>Recipient</th>
+        <th>Link</th>
+      </tr>
+      <tr>
+        <th><input type="text" id="filterType" onkeyup="filterTable()" placeholder="Search for Document Type" class="filter-input"></th>
+        <th><input type="text" id="filterShelfmark" onkeyup="filterTable()" placeholder="Search for Shelfmark" class="filter-input"></th>
+        <th><input type="text" id="filterDate" onkeyup="filterTable()" placeholder="Search for Letter's Date" class="filter-input"></th>
+        <th><input type="text" id="filterHubs" onkeyup="filterTable()" placeholder="Search for Newsetter's Hub and Date" class="filter-input"></th>
+        <th><input type="text" id="filterSender" onkeyup="filterTable()" placeholder="Search for Sender" class="filter-input"></th>
+        <th><input type="text" id="filterRecipient" onkeyup="filterTable()" placeholder="Search for Recipient" class="filter-input"></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for post in site.pages %}
+      <tr>
+        <td>{{ page.doctype }}</td>
+        <td>{{ page.shelfmark }}</td>
+        <td>{{ page.date }}</td>
+        <td>{{ page.hubs }}</td>
+        <td>{{ page.sender }}</td>
+        <td>{{ page.recipient }}</td>
+        <td><a href="{{ page.url }}">{{ page.title }}</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<script>
+  function filterTable() {
+    var input, filter, table, tr, td, i, j, txtValue;
+    table = document.getElementById("tocTable");
+    tr = table.getElementsByTagName("tr");
+    
+    var filters = [
+      document.getElementById("filterType").value.toUpperCase(),
+      document.getElementById("filterShelfmark").value.toUpperCase(),
+      document.getElementById("filterDate").value.toUpperCase(),
+      document.getElementById("filterHubs").value.toUpperCase(),
+      document.getElementById("filterSender").value.toUpperCase(),
+      document.getElementById("filterRecipient").value.toUpperCase()
+    ];
+    
+    for (i = 2; i < tr.length; i++) {
+      tr[i].style.display = "";
+      for (j = 0; j < filters.length; j++) {
+        td = tr[i].getElementsByTagName("td")[j];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filters[j]) === -1) {
+            tr[i].style.display = "none";
+            break;
           }
         }
       }
     }
-  </script>
+  }
+</script>
