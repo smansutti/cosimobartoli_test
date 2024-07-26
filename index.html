@@ -61,13 +61,13 @@ title: "Ed."
       <ul class="texts">
       {% for item in site.texts %}
       <tr>
-        <td>{{ page.doctype }}</td>
-        <td>{{ page.shelfmark }}</td>
-        <td>{{ page.date }}</td>
-        <td>{{ page.hubs }}</td>
-        <td>{{ page.sender }}</td>
-        <td>{{ page.recipient }}</td>
-        <td><a href="{{ page.url }}">See</a></td>
+        <td>{{ item.doctype }}</td>
+        <td>{{ item.shelfmark }}</td>
+        <td>{{ item.date }}</td>
+        <td>{{ item.hubs }}</td>
+        <td>{{ item.sender }}</td>
+        <td>{{ item.recipient }}</td>
+        <td><a href="{{ item.url }}">See</a></td>
       </tr>
       {% endfor %}
     </tbody>
