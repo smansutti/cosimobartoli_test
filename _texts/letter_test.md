@@ -3,7 +3,7 @@ layout: letter
 doctype: Letter
 title: Example Letter
 shelfmark: Mediceo del Principato, 2976, f. 145r
-date: "17-06-1566"
+date: 17-06-1566
 place: Venice
 sender: Cosimo Bartoli
 recipient: Cosimo de' Medici
