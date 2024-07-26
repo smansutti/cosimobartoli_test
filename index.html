@@ -58,7 +58,7 @@ title: "Ed."
       </tr>
     </thead>
     <tbody>
-      {% for post in site.pages %}
+      {% for item in site.texts %}
       <tr>
         <td>{{ page.doctype }}</td>
         <td>{{ page.shelfmark }}</td>
@@ -66,7 +66,7 @@ title: "Ed."
         <td>{{ page.hubs }}</td>
         <td>{{ page.sender }}</td>
         <td>{{ page.recipient }}</td>
-        <td><a href="{{ page.url }}">{{ page.title }}</a></td>
+        <td><a href="{{ page.url }}">See</a></td>
       </tr>
       {% endfor %}
     </tbody>
