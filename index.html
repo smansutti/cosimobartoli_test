@@ -51,9 +51,7 @@ title: "Ed."
         <th><input type="text" id="filterType" onkeyup="filterTable()" placeholder="Search for Document Type" class="filter-input"></th>
         <th><input type="text" id="filterShelfmark" onkeyup="filterTable()" placeholder="Search for Shelfmark" class="filter-input"></th>
         <th><input type="text" id="filterDate" onkeyup="filterTable()" placeholder="Search for Letter's Date" class="filter-input"></th>
-        <th><input type="text" id="filterHubs" onkeyup="filterTable()" placeholder="Search for Newsetter's Hub and Date" class="filter-input"></th>
-        <th><input type="text" id="filterSender" onkeyup="filterTable()" placeholder="Search for Sender" class="filter-input"></th>
-        <th><input type="text" id="filterRecipient" onkeyup="filterTable()" placeholder="Search for Recipient" class="filter-input"></th>
+        <th><input type="text" id="filterHubs" onkeyup="filterTable()" placeholder="Search for Newsetter's Hub" class="filter-input"></th>
         <th></th>
       </tr>
     </thead>
@@ -63,13 +61,7 @@ title: "Ed."
       <tr>
         <td>{{ item.doctype }}</td>
         <td>{{ item.shelfmark }}</td>
-        <td>
-            {% if item.date %}
-              {{ item.date | date: "%d-%m-%Y" }}
-            {% else %}
-              N/A
-            {% endif %}
-          </td>
+        <td>{{ item.docdate }}</td>
         <td>{{ item.hubs }}</td>
         <td>{{ item.sender }}</td>
         <td>{{ item.recipient }}</td>
