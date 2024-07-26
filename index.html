@@ -26,8 +26,8 @@ title: "Ed."
         <tr>
           <th>Document Type</th>
           <th>Shelfmark</th>
-          <th>Date</th>
-          <th>Place</th>
+          <th>Letter's Date</th>
+          <th>Newsletter's Hubs</th>
           <th>Sender</th>
           <th>Recipient</th>
           <th>Link</th>
@@ -35,8 +35,8 @@ title: "Ed."
         <tr>
           <th><input type="text" id="filterType" onkeyup="filterTable()" placeholder="Search for Document Type" class="filter-input"></th>
           <th><input type="text" id="filterShelfmark" onkeyup="filterTable()" placeholder="Search for Shelfmark" class="filter-input"></th>
-          <th><input type="text" id="filterDate" onkeyup="filterTable()" placeholder="Search for Date" class="filter-input"></th>
-          <th><input type="text" id="filterPlace" onkeyup="filterTable()" placeholder="Search for Place" class="filter-input"></th>
+          <th><input type="text" id="filterDate" onkeyup="filterTable()" placeholder="Search for Letter's Date" class="filter-input"></th>
+          <th><input type="text" id="filterHubs" onkeyup="filterTable()" placeholder="Search for Newsetter's Hub and Date" class="filter-input"></th>
           <th><input type="text" id="filterSender" onkeyup="filterTable()" placeholder="Search for Sender" class="filter-input"></th>
           <th><input type="text" id="filterRecipient" onkeyup="filterTable()" placeholder="Search for Recipient" class="filter-input"></th>
           <th></th>
@@ -45,13 +45,13 @@ title: "Ed."
       <tbody>
         {% for post in site.posts %}
         <tr>
-          <td>{{ post.layout }}</td>
-          <td>{{ post.shelfmark }}</td>
-          <td>{{ post.date }}</td>
-          <td>{{ post.place }}</td>
-          <td>{{ post.sender }}</td>
-          <td>{{ post.recipient }}</td>
-          <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+          <td>{{ page.layout }}</td>
+          <td>{{ page.shelfmark }}</td>
+          <td>{{ page.date }}</td>
+          <td>{{ page.hubs }}</td>
+          <td>{{ page.sender }}</td>
+          <td>{{ page.recipient }}</td>
+          <td><a href="{{ page.url }}">{{ page.title }}</a></td>
         </tr>
         {% endfor %}
       </tbody>
@@ -67,7 +67,7 @@ title: "Ed."
         document.getElementById("filterType").value.toUpperCase(),
         document.getElementById("filterShelfmark").value.toUpperCase(),
         document.getElementById("filterDate").value.toUpperCase(),
-        document.getElementById("filterPlace").value.toUpperCase(),
+        document.getElementById("filterHubs").value.toUpperCase(),
         document.getElementById("filterSender").value.toUpperCase(),
         document.getElementById("filterRecipient").value.toUpperCase()
       ];
