@@ -63,7 +63,13 @@ title: "Ed."
       <tr>
         <td>{{ item.doctype }}</td>
         <td>{{ item.shelfmark }}</td>
-        <td>{{ item.date }}</td>
+        <td>
+            {% if item.date %}
+              {{ item.date | date: "%d-%m-%Y" }}
+            {% else %}
+              N/A
+            {% endif %}
+          </td>
         <td>{{ item.hubs }}</td>
         <td>{{ item.sender }}</td>
         <td>{{ item.recipient }}</td>
