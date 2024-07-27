@@ -5,7 +5,7 @@ title:               Cosimo Bartoli and Renaissance News
 tagline:             'a semi-automated edition of letters and newsletters from Venice'
 description:         'a semi-automated edition of letters and newsletters from Venice'
 url:                 'https://smansutti.github.io/'
-baseurl:             '/test_ed'
+baseurl:             '/cosimobartoli_test'
 
 # About/contact
 author:
