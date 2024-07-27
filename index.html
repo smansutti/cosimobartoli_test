@@ -21,63 +21,64 @@ title: "Ed."
 
 
 <div class="toc">
-  <h2>Transcriptions</h2>
-  <table id="tocTable">
-    <thead>
-      <tr>
-        <th>Document Type</th>
-        <th>Shelfmark</th>
-        <th>Letter's Date</th>
-        <th>Newsletter's Hubs</th>
-        <th>Link</th>
-      </tr>
-      <tr>
-        <th><input type="text" id="filterType" onkeyup="filterTable()" placeholder="Search for Document Type" class="filter-input"></th>
-        <th><input type="text" id="filterShelfmark" onkeyup="filterTable()" placeholder="Search for Shelfmark" class="filter-input"></th>
-        <th><input type="text" id="filterDate" onkeyup="filterTable()" placeholder="Search for Letter's Date" class="filter-input"></th>
-        <th><input type="text" id="filterHubs" onkeyup="filterTable()" placeholder="Search for Newsetter's Hub" class="filter-input"></th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for item in site.texts %}
-      <tr>
-        <td>{{ item.doctype }}</td>
-        <td>{{ item.shelfmark }}</td>
-        <td>{{ item.docdate }}</td>
-        <td>{{ item.hubs }}</td>
-        <td><a href="{{ site.baseurl }}{{ item.url }}">See</a></td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-</div>
-<script>
-  function filterTable() {
-    var input, filter, table, tr, td, i, j, txtValue;
-    table = document.getElementById("tocTable");
-    tr = table.getElementsByTagName("tr");
-    
-    var filters = [
-      document.getElementById("filterType").value.toUpperCase(),
-      document.getElementById("filterShelfmark").value.toUpperCase(),
-      document.getElementById("filterDate").value.toUpperCase(),
-      document.getElementById("filterHubs").value.toUpperCase(),
-      document.getElementById("filterSender").value.toUpperCase(),
-      document.getElementById("filterRecipient").value.toUpperCase()
-    ];
-    
-    for (i = 2; i < tr.length; i++) {
-      tr[i].style.display = "";
-      for (j = 0; j < filters.length; j++) {
-        td = tr[i].getElementsByTagName("td")[j];
-        if (td) {
-          txtValue = td.textContent || td.innerText;
-          if (txtValue.toUpperCase().indexOf(filters[j]) === -1) {
-            tr[i].style.display = "none";
-            break;
+    <h2>Transcriptions</h2>
+    <table id="tocTable">
+      <thead>
+        <tr>
+          <th>Document Type</th>
+          <th>Shelfmark</th>
+          <th>Letter's Date</th>
+          <th>Newsletter's Hubs</th>
+          <th>Link</th>
+        </tr>
+        <tr>
+          <th><input type="text" id="filterType" onkeyup="filterTable()" placeholder="Search for Document Type" class="filter-input"></th>
+          <th><input type="text" id="filterShelfmark" onkeyup="filterTable()" placeholder="Search for Shelfmark" class="filter-input"></th>
+          <th><input type="text" id="filterDate" onkeyup="filterTable()" placeholder="Search for Letter's Date" class="filter-input"></th>
+          <th><input type="text" id="filterHubs" onkeyup="filterTable()" placeholder="Search for Newsletter's Hub" class="filter-input"></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in site.texts %}
+        <tr>
+          <td>{{ item.doctype }}</td>
+          <td>{{ item.shelfmark }}</td>
+          <td>{{ item.docdate }}</td>
+          <td>{{ item.hubs }}</td>
+          <td><a href="{{ site.baseurl }}{{ item.url }}">See</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <script>
+    function filterTable() {
+      var table, tr, td, i, j, txtValue;
+      table = document.getElementById("tocTable");
+      tr = table.getElementsByTagName("tr");
+      
+      // Get the values of all the filter inputs
+      var filters = [
+        document.getElementById("filterType").value.toUpperCase(),
+        document.getElementById("filterShelfmark").value.toUpperCase(),
+        document.getElementById("filterDate").value.toUpperCase(),
+        document.getElementById("filterHubs").value.toUpperCase()
+      ];
+      
+      // Loop through all table rows, starting from the third row (skipping header rows)
+      for (i = 2; i < tr.length; i++) {
+        tr[i].style.display = "";
+        for (j = 0; j < filters.length; j++) {
+          td = tr[i].getElementsByTagName("td")[j];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filters[j]) === -1) {
+              tr[i].style.display = "none";
+              break;
+            }
           }
         }
       }
     }
-  }
-</script>
+  </script>
