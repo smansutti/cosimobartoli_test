@@ -1,7 +1,6 @@
 ---
 layout: newsletter
 doctype: Newsletter
-title: Example Newsletter
 shelfmark: Mediceo del Principato, 3079 f. 145r
 hubs: Rome (15-06-1562), Vienna (14-06-1562)
 writer: Cosimo Bartoli
