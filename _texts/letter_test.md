@@ -1,7 +1,6 @@
 ---
 layout: letter
 doctype: Letter
-title: Example Letter
 shelfmark: Mediceo del Principato, 2976, f. 145r
 docdate: "17-06-1566"
 place: Venice
