@@ -3,65 +3,86 @@ layout: page
 title: About
 ---
 
-This website presents a semi-automated digital edition of letters and newsletters written and sent by Cosimo Bartoli to the Medici in Florence during his stay as their agent in Venice from 1562 to 1572. 
+This website presents a semi-automated digital edition of letters and newsletters written and sent by Cosimo Bartoli to the Medici in Florence during his stay as their agent in Venice from 1562 to 1572.  
 The edition is considered semi-automated because the documents were transcribed using the [Transkribus software](https://www.transkribus.org/). Some of the transcriptions, marked as “Reviewed,” have been manually corrected, while others remain unreviewed, with an accuracy rate of 96.80%.
+
+
 
 ## Cosimo Bartoli
 
 Cosimo Bartoli (1503-1572) was a polymath and a complex figure: scholar, philosopher, mathematician, technician, courtier, and diplomat. He embodied the new figure of the intellectual, placing his vast theoretical knowledge, political intelligence and culture at the service of the Duke Cosimo I’ de Medici. Bartoli was deeply involved in the cultural life of his time, actively contributing to the founding and early activities of the Accademia Fiorentina. He is mainly known for his translation of Leon Battista Alberti’s De Re Aedificatoria and for his long-standing friendship with the painter and architect Giorgio Vasari. In 1562, he was appointed by Duke Cosimo I as the Florentine agent in Venice, a crucial hub of information during the sixteenth century. His primary duty was to gather and relay information and news from Venice and beyond to Florence.
 
 
+
 ## The Archival Documents
 
-The letters and newsletters published in this digital edition are preserved in the Florence State Archives, within the Mediceo del Principato and Carte Strozziane collections. The volumes transcribed, either in full or partially (when they include documents by authors other than Bartoli), are as follows:
-•	Mediceo del Principato, vol. 2976
-•	Mediceo del Principato, vol. 2977
-•	Mediceo del Principato, vol. 2978
-•	Mediceo del Principato, vol. 2979
-•	Mediceo del Principato, vol. 2980
-•	Mediceo del Principato, vol. 2981
-•	Mediceo del Principato, vol. 3079
-•	Mediceo del Principato, vol. 3080
-•	Mediceo del Principato, vol. 3081
-•	Carte Strozziane, Serie Prima, vol. 120
-•	Carte Strozziane, Serie Prima, vol. 147
+The letters and newsletters published in this digital edition are preserved in the Florence State Archives, within the Mediceo del Principato and Carte Strozziane collections. The volumes transcribed, either in full or partially (when they include documents by authors other than Bartoli), are as follows:  
+•	Mediceo del Principato, vol. 2976  
+•	Mediceo del Principato, vol. 2977  
+•	Mediceo del Principato, vol. 2978  
+•	Mediceo del Principato, vol. 2979  
+•	Mediceo del Principato, vol. 2980  
+•	Mediceo del Principato, vol. 2981  
+•	Mediceo del Principato, vol. 3079  
+•	Mediceo del Principato, vol. 3080  
+•	Mediceo del Principato, vol. 3081  
+•	Carte Strozziane, Serie Prima, vol. 120  
+•	Carte Strozziane, Serie Prima, vol. 147  
+
 
 Each transcription includes the archival signature and page number.
 
 
+
 ## Editorial Practices
 
-The documents were transcribed automatically using the [Transkribus software](https://www.transkribus.org/). The text recognition model was specifically trained on documents written by Cosimo Bartoli and his son, Curzio Bartoli, resulting in a high degree of accuracy (96.80%). The trained model does not automatically expand abbreviations. A script was employed to replace the abbreviations with their expansions. [The model Cosimo Bartoli’s Italian Humanistic and Cursive Scripts (1562-1572)](LINK) is publicly available and can be used by any registered Transkribus user.
+The documents were transcribed automatically using the [Transkribus software](https://www.transkribus.org/).  
+The text recognition model was specifically trained on documents written by Cosimo Bartoli and his son, Curzio Bartoli, resulting in a high degree of accuracy (96.80%).  
+The trained model does not automatically expand abbreviations. A script was employed to replace the abbreviations with their expansions. [The model Cosimo Bartoli’s Italian Humanistic and Cursive Scripts (1562-1572)](LINK) is publicly available and can be used by any registered Transkribus user.
+
 
 The digital edition was created using [Ed.](http://minicomp.github.io/ed/), a Jekyll theme designed for minimal digital editions. 
 
+
 Each letter and newsletter is treated as an individual document. The transcriptions can be browsed on the [Home page](LINK) or searched by keyword on the [Search page](LINK).
+
 
 The documents are categorized into three genres: Letter, Newsletter, and Other. The “Other” category includes documents that contained information attached to a letter but did not follow the traditional form of a newsletter, lacking a hub and date.
 
+
 Each document includes metadata at the top, followed by the transcription. The metadata fields are divided by genre:
-| Genre       | Metadata                                                                 |
-|-------------|--------------------------------------------------------------------------|
-| Letter      | Document Type, Shelfmark, Date, Place, Sender, Recipient, Attached Newsletter, Reviewed |
-| Newsletter  | Document Type, Shelfmark, Hubs, Writer, Attached Letter, Reviewed        |
-| Other       | Document Type: Other, Shelfmark, Title, Attached to, Reviewed            |
+
+Genre	Metadata
+Letter	Document Type, Shelfmark, Date, Place, Sender, Recipient, Attached Newsletter, Reviewed
+Newsletter	Document Type, Shelfmark, Hubs, Writer, Attached Letter, Reviewed
+Other	Document Type: Other, Shelfmark, Title, Attached to, Reviewed
+
 
 The “Attached Newsletter” and “Attached Letter” fields link to the corresponding newsletter or letter, respectively. The “Reviewed” field indicates whether I have personally reviewed the transcription or if it remains as the automatic transcription generated by Transkribus, which may be less accurate.
 
 
+
 ## Contributors
 
-This digital edition was created by Sara Mansutti as part of her PhD project within the [EURONEWS Project](https://www.euronewsproject.org/) at University College Cork. 
+This digital edition was created by Sara Mansutti as part of her PhD project within the [EURONEWS Project](https://www.euronewsproject.org/) at University College Cork.  
+
 The automated transcriptions of 628 pages have been corrected and tagged by volunteers in a [digitally-enabled participatory project](https://web.archive.org/web/20240618002432/https://cosimobartoli.saramansutti.com/). 
 I would like to extend my gratitude to all the participants for their time and dedication: Borna, Adriano, Irene, Sabina, Margherita, Miriam, Marco, Sue, Antonella, Rachel, Alba, Céline, Brenna, Federica, Brendan, Rose, Emma, Wouter, Roberto, Tayra, Doug, Davide, Michele, and Zeynep.
 
+
+
 ## License
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Cosimo Bartoli and Renaissance News. A semi-automated edition of letters and newsletters from Venice</span> by <span property="cc:attributionName">Sara Mansutti</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+
+**Cosimo Bartoli and Renaissance News. A semi-automated edition of letters and newsletters from Venice** by *Sara Mansutti* is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1).
+
+![CC Icon](https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1) ![BY Icon](https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1) ![NC Icon](https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1)
+
 
 
 ## Repository
 
 All the transcriptions (in PAGE XML and TEI XML formats) can be accessed here: [LINK].
+
 
 
 ## Contact Information
