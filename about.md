@@ -16,16 +16,16 @@ Cosimo Bartoli (1503-1572) was a polymath and a complex figure: scholar, philoso
 ## The Archival Documents
 The letters and newsletters published in this digital edition are preserved in the Florence State Archives, within the Mediceo del Principato and Carte Strozziane collections. The volumes transcribed, either in full or partially (when they include documents by authors other than Bartoli), are as follows:  
 <br>
-•	Mediceo del Principato, vol. 493A
-•	Mediceo del Principato, vol. 494
-•	Mediceo del Principato, vol. 494A
-•	Mediceo del Principato, vol. 495
-•	Mediceo del Principato, vol. 496
-•	Mediceo del Principato, vol. 504
-•	Mediceo del Principato, vol. 506
-•	Mediceo del Principato, vol. 507
-•	Mediceo del Principato, vol. 509
-•	Mediceo del Principato, vol. 2976  
+•	Mediceo del Principato, vol. 493A  
+•	Mediceo del Principato, vol. 494  
+•	Mediceo del Principato, vol. 494A  
+•	Mediceo del Principato, vol. 495  
+•	Mediceo del Principato, vol. 496  
+•	Mediceo del Principato, vol. 504  
+•	Mediceo del Principato, vol. 506  
+•	Mediceo del Principato, vol. 507  
+•	Mediceo del Principato, vol. 509  
+•	Mediceo del Principato, vol. 2976   
 •	Mediceo del Principato, vol. 2977  
 •	Mediceo del Principato, vol. 2978  
 •	Mediceo del Principato, vol. 2979  
