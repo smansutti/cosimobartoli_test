@@ -16,6 +16,15 @@ Cosimo Bartoli (1503-1572) was a polymath and a complex figure: scholar, philoso
 ## The Archival Documents
 The letters and newsletters published in this digital edition are preserved in the Florence State Archives, within the Mediceo del Principato and Carte Strozziane collections. The volumes transcribed, either in full or partially (when they include documents by authors other than Bartoli), are as follows:  
 <br>
+•	Mediceo del Principato, vol. 493A
+•	Mediceo del Principato, vol. 494
+•	Mediceo del Principato, vol. 494A
+•	Mediceo del Principato, vol. 495
+•	Mediceo del Principato, vol. 496
+•	Mediceo del Principato, vol. 504
+•	Mediceo del Principato, vol. 506
+•	Mediceo del Principato, vol. 507
+•	Mediceo del Principato, vol. 509
 •	Mediceo del Principato, vol. 2976  
 •	Mediceo del Principato, vol. 2977  
 •	Mediceo del Principato, vol. 2978  
@@ -33,9 +42,9 @@ Each transcription includes the archival signature and page number.
 <br>
 
 ## Editorial Practices
-The documents were transcribed automatically using the [Transkribus software](https://www.transkribus.org/). The text recognition model was specifically trained on documents written by Cosimo Bartoli and his son, Curzio Bartoli, resulting in a high degree of accuracy (96.80%). The trained model does not automatically expand abbreviations. A script was employed to replace the abbreviations with their expansions. The mdoel [Cosimo Bartoli’s Italian Humanistic and Cursive Scripts (1562-1572)](LINK) is publicly available and can be used by any registered Transkribus user.
+The documents were transcribed automatically using the [Transkribus software](https://www.transkribus.org/). The text recognition model was specifically trained on documents written by Cosimo Bartoli, his son, Curzio Bartoli, and the secretary Giovanni Gavazzo, resulting in a high degree of accuracy (96.80%). The trained model does not automatically expand abbreviations. A script was employed to replace the abbreviations with their expansions. The model [Cosimo Bartoli’s Italian Humanistic and Cursive Scripts (1562-1572)](https://www.transkribus.org/model/cosimo-bartoli-model) is publicly available and can be used by any registered Transkribus user.
 <br>
-Each letter and newsletter is treated as an individual document. The transcriptions can be browsed on the [Home page](LINK) or searched by keyword on the [Search page](LINK).
+Each letter and newsletter is treated as an individual document. The transcriptions can be browsed on the [Home page](https://smansutti.github.io/cosimobartoli/) or searched by keyword on the [Search page](https://smansutti.github.io/cosimobartoli/search/).
 <br>
 The documents are categorized into three genres: Letter, Newsletter, and Other. The “Other” category includes documents that contained information attached to a letter but did not follow the traditional form of a newsletter, lacking a hub and date. Each document includes metadata at the top, followed by the transcription.
 <br>
